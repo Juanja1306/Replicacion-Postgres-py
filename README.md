@@ -27,8 +27,8 @@ Características
 ---------------------------------------------------------
 Requisitos
 ---------------------------------------------------------
-- Python 3.6+ 
-- PostgreSQL
+- Python 3.12 
+- PostgreSQL 17
 
 Dependencias de Python:
 - psycopg2 (o psycopg2-binary)
@@ -131,13 +131,3 @@ Manejo de Errores y Logging
   * Rojo: Errores críticos (p. ej., fallo en la creación de pools o errores durante la ejecución de una consulta).
   * Amarillo: Advertencias y estados de standby ante problemas de conexión.
   * Cian, Azul y Verde: Mensajes informativos sobre el proceso de sincronización.
-
----------------------------------------------------------
-Licencia
----------------------------------------------------------
-Este proyecto se distribuye bajo la MIT License. Consulta el archivo LICENSE para más detalles.
-
----------------------------------------------------------
-Advertencia
----------------------------------------------------------
-Antes de usar este script en un entorno de producción, asegúrate de probarlo en un entorno de desarrollo y adaptarlo a la estructura y necesidades específicas de tus bases de datos.
