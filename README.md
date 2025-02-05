@@ -4,16 +4,17 @@ Sincronización Bidireccional de Bases de Datos PostgreSQL
 Este proyecto contiene un script en Python que permite sincronizar cambios entre dos bases de datos PostgreSQL de manera bidireccional. La sincronización se realiza leyendo los cambios registrados en una tabla especial ("database_changes") y aplicándolos en la otra base de datos. Se han implementado mecanismos de control de errores, reconexión y logs con colores para facilitar la monitorización.
 
 ---------------------------------------------------------
-Tabla de Contenidos
+## Tabla de Contenidos
 ---------------------------------------------------------
-- Características
-- Requisitos
-- Instalación
-- Configuración
-- Uso
-- Descripción del Código
-- Manejo de Errores y Logging
-- Licencia
+
+- [Características](#características)
+- [Requisitos](#requisitos)
+- [Instalación](#instalación)
+- [Configuración](#configuración)
+- [Uso](#uso)
+- [Descripción del Código](#descripción-del-código)
+- [Manejo de Errores y Logging](#manejo-de-errores-y-logging)
+
 
 ---------------------------------------------------------
 Características
