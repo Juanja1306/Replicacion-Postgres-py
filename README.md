@@ -5,7 +5,6 @@ Este proyecto contiene un script en Python que permite sincronizar cambios entre
 
 ---------------------------------------------------------
 ## Tabla de Contenidos
----------------------------------------------------------
 
 - [Características](#características)
 - [Requisitos](#requisitos)
@@ -18,7 +17,7 @@ Este proyecto contiene un script en Python que permite sincronizar cambios entre
 
 ---------------------------------------------------------
 Características
----------------------------------------------------------
+
 - Sincronización bidireccional: Actualiza ambas bases de datos, transfiriendo los cambios de la primaria a la secundaria y viceversa.
 - Uso de pool de conexiones: Se emplea "psycopg2.pool.SimpleConnectionPool" para gestionar múltiples conexiones de forma eficiente.
 - Ejecución programada: El script utiliza el módulo "schedule" para ejecutar la sincronización de forma periódica (cada 5 segundos).
@@ -27,7 +26,7 @@ Características
 
 ---------------------------------------------------------
 Requisitos
----------------------------------------------------------
+
 - Python 3.12 
 - PostgreSQL 17
 
@@ -38,7 +37,7 @@ Dependencias de Python:
 
 ---------------------------------------------------------
 Instalación
----------------------------------------------------------
+
 1. Clonar el repositorio o descargar el script:
 
    git clone https://tu-repositorio.git
@@ -55,7 +54,7 @@ Instalación
 
 ---------------------------------------------------------
 Configuración
----------------------------------------------------------
+
 El script establece dos pools de conexiones para las bases de datos primaria y secundaria. Las configuraciones actuales son:
 
 Base de Datos Secundaria:
@@ -82,7 +81,7 @@ Adicionalmente, asegúrate de que ambas bases de datos cuenten con la tabla "dat
 
 ---------------------------------------------------------
 Uso
----------------------------------------------------------
+
 Para iniciar la sincronización, ejecuta el script con:
 
    python nombre_del_script.py
@@ -91,7 +90,7 @@ El proceso se ejecutará de manera continua, verificando y aplicando los cambios
 
 ---------------------------------------------------------
 Descripción del Código
----------------------------------------------------------
+
 1. Conexión a las Bases de Datos
    - Se configuran dos pools de conexiones utilizando "psycopg2.pool.SimpleConnectionPool", uno para cada base de datos. Si ocurre algún error al crear los pools, se imprime un mensaje de error y se termina la ejecución.
 
@@ -125,7 +124,7 @@ Descripción del Código
 
 ---------------------------------------------------------
 Manejo de Errores y Logging
----------------------------------------------------------
+
 - Conexión: Se verifica la disponibilidad de cada base de datos antes de intentar la sincronización.
 - Ejecución de consultas: Se captura y maneja cualquier excepción durante la ejecución de las consultas SQL.
 - Mensajes de Log: Utiliza "colorama" para imprimir:
