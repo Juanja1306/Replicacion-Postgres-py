@@ -16,7 +16,7 @@ Este proyecto contiene un script en Python que permite sincronizar cambios entre
 
 
 ---------------------------------------------------------
-Características
+## Características
 
 - Sincronización bidireccional: Actualiza ambas bases de datos, transfiriendo los cambios de la primaria a la secundaria y viceversa.
 - Uso de pool de conexiones: Se emplea "psycopg2.pool.SimpleConnectionPool" para gestionar múltiples conexiones de forma eficiente.
@@ -25,7 +25,7 @@ Características
 - Manejo robusto de errores: Se implementa la verificación de la disponibilidad de las bases de datos y se gestionan excepciones durante la ejecución de consultas.
 
 ---------------------------------------------------------
-Requisitos
+## Requisitos
 
 - Python 3.12 
 - PostgreSQL 17
@@ -36,7 +36,7 @@ Dependencias de Python:
 - schedule
 
 ---------------------------------------------------------
-Instalación
+## Instalación
 
 1. Clonar el repositorio o descargar el script:
 
@@ -53,7 +53,7 @@ Instalación
    pip install psycopg2-binary colorama schedule
 
 ---------------------------------------------------------
-Configuración
+## Configuración
 
 El script establece dos pools de conexiones para las bases de datos primaria y secundaria. Las configuraciones actuales son:
 
@@ -80,7 +80,7 @@ Adicionalmente, asegúrate de que ambas bases de datos cuenten con la tabla "dat
 - descripcion (en formato JSON o diccionario)
 
 ---------------------------------------------------------
-Uso
+## Uso
 
 Para iniciar la sincronización, ejecuta el script con:
 
@@ -89,7 +89,7 @@ Para iniciar la sincronización, ejecuta el script con:
 El proceso se ejecutará de manera continua, verificando y aplicando los cambios entre ambas bases de datos cada 5 segundos.
 
 ---------------------------------------------------------
-Descripción del Código
+## Descripción del Código
 
 1. Conexión a las Bases de Datos
    - Se configuran dos pools de conexiones utilizando "psycopg2.pool.SimpleConnectionPool", uno para cada base de datos. Si ocurre algún error al crear los pools, se imprime un mensaje de error y se termina la ejecución.
@@ -123,7 +123,7 @@ Descripción del Código
    - El módulo "schedule" programa la ejecución de la función "job" cada 5 segundos. Un bucle infinito se encarga de mantener el proceso activo, ejecutando las tareas programadas.
 
 ---------------------------------------------------------
-Manejo de Errores y Logging
+## Manejo de Errores y Logging
 
 - Conexión: Se verifica la disponibilidad de cada base de datos antes de intentar la sincronización.
 - Ejecución de consultas: Se captura y maneja cualquier excepción durante la ejecución de las consultas SQL.
