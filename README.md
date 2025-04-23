@@ -39,19 +39,26 @@ Dependencias de Python:
 ## Instalación
 
 1. Clonar el repositorio o descargar el script:
-
-   git clone https://tu-repositorio.git
-   cd tu-repositorio
+```bash
+   git clone https://github.com/Juanja1306/Replicacion-Postgres-py.git
+   cd Replicacion-Postgres-py
+```
 
 2. Crear un entorno virtual (opcional pero recomendado):
-
+```bash
    python3 -m venv venv
-   source venv/bin/activate   (en Windows: venv\Scripts\activate)
+   source venv/bin/activate   
+```
+En Windows: 
+```bash
+   python -m venv venv
+   venv\Scripts\activate
+```
 
 3. Instalar las dependencias:
-
+```bash
    pip install psycopg2-binary colorama schedule
-
+```
 ---------------------------------------------------------
 ## Configuración
 
