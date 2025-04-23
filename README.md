@@ -62,7 +62,7 @@ En Windows:
 ---------------------------------------------------------
 ## Configuración
 
-El script establece dos pools de conexiones para las bases de datos primaria y secundaria. Las configuraciones actuales son:
+El script establece dos pools de conexiones para las bases de datos primaria y secundaria. Las configuraciones actuales son (Dadas de baja):
 
 Base de Datos Secundaria:
 - Usuario: postgres
